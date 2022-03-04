@@ -1,0 +1,12 @@
+services:
+  util:
+    build: .
+    privileged: true
+    tty: true
+    stdin_open: true
+    environment:
+      SHELL: /usr/bin/fish
+    ports:
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
