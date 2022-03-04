@@ -120,6 +120,7 @@ COPY tmux.conf .tmux.conf
 COPY config.fish .config/fish/
 COPY git-aliases.fish .config/fish/conf.d/
 COPY functions .config/fish/functions
+
 RUN fish -c 'curl -sL https://git.io/fisher | source &&\
              fisher install jorgebucaran/fisher &&\
              fisher install jethrokuan/fzf &&\
